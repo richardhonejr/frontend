@@ -1,9 +1,15 @@
 <div class="card">
-     <div class="card-header text-dark" [ngClass]= "{'bg-dark':task.priority_level==='low',
+     <!-- low priority will be yellow
+     medium priority will be orange
+     high priority will be red 
+     the color settings are overrides in the css-->
+     <div class="card-header text-dark" [ngClass]= "{
+          'bg-dark':task.priority_level==='low', 
           'bg-warning':task.priority_level==='medium',
           'bg-danger':task.priority_level==='high'}">
 
           <h4 class="card-title">{{task.title}}</h4>
+
      </div>
      <div class="card-body bg-secondary text-dark">
           <p>{{task.description}}</p>
