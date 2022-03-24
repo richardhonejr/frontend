@@ -1,0 +1,5 @@
+/* this is a way to override the css defaults in bootstrap */
+/* in this case we are overriding the color for bg-light */
+.bg-light{
+     background-color: aquamarine !important;
+}
